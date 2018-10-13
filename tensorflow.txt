@@ -1,0 +1,1 @@
+tf.cast(label, tf.int32) 强制转换数据
