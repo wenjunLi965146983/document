@@ -1,1 +1,9 @@
 tf.cast(label, tf.int32) 强制转换数据
+Tensor shape：[1,1,1]--(3,)
+                         [[1],[1],[1]]--(3,1)
+Tensor元素：a=Tensor[1,1,1]  print(sess.run(a))
+reshape :重新构造Tensor
+
+concat([tensor1, tensor2], div, name='concat') ：Tensor合并，div指定维度
+
+dynamic_partitions(data,partition,num of partition,name):指定数据，从第一维划分，paititions:tensor，划分图，num of partition 划分数量
