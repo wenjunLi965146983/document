@@ -1,0 +1,10 @@
+C:\Users\rdpublic\Documents\Visual Studio 2017\Projects\WindowsFormsControlLibrary3\WindowsFormsControlLibrary3\bin\Debug\WindowsFormsControlLibrary3.dll
+C:\Users\rdpublic\Documents\Visual Studio 2017\Projects\WindowsFormsControlLibrary3\WindowsFormsControlLibrary3\bin\Debug\WindowsFormsControlLibrary3.pdb
+C:\Users\rdpublic\Documents\Visual Studio 2017\Projects\WindowsFormsControlLibrary3\WindowsFormsControlLibrary3\bin\Debug\halcondotnet.dll
+C:\Users\rdpublic\Documents\Visual Studio 2017\Projects\WindowsFormsControlLibrary3\WindowsFormsControlLibrary3\bin\Debug\halcondotnet.xml
+C:\Users\rdpublic\Documents\Visual Studio 2017\Projects\WindowsFormsControlLibrary3\WindowsFormsControlLibrary3\obj\Debug\WindowsFormsControlLibrary3.csproj.CoreCompileInputs.cache
+C:\Users\rdpublic\Documents\Visual Studio 2017\Projects\WindowsFormsControlLibrary3\WindowsFormsControlLibrary3\obj\Debug\WindowsFormsControlLibrary3.dll
+C:\Users\rdpublic\Documents\Visual Studio 2017\Projects\WindowsFormsControlLibrary3\WindowsFormsControlLibrary3\obj\Debug\WindowsFormsControlLibrary3.pdb
+C:\Users\rdpublic\Documents\Visual Studio 2017\Projects\WindowsFormsControlLibrary3\WindowsFormsControlLibrary3\obj\Debug\WindowsFormsControlLibrary3.csprojResolveAssemblyReference.cache
+C:\Users\rdpublic\Documents\Visual Studio 2017\Projects\WindowsFormsControlLibrary3\WindowsFormsControlLibrary3\obj\Debug\ChoiceTech.Halcon.Control.HWindow_Final.resources
+C:\Users\rdpublic\Documents\Visual Studio 2017\Projects\WindowsFormsControlLibrary3\WindowsFormsControlLibrary3\obj\Debug\WindowsFormsControlLibrary3.csproj.GenerateResource.Cache
