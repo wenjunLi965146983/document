@@ -1,0 +1,93 @@
+    初始化方法定义了对Keras层设置初始化权重的方法，对kenerl和bias进行初始化
+
+
+1.Zeros
+2.Ones
+3.Constant
+4.RandomNormal    
+
+keras.initializers.RandomNormal(mean=0.0, stddev=0.05, seed=None))
+
+mean：均值
+stddev：标准差
+seed：随机数种子
+
+5.RandomUniform
+keras.initializers.RandomUniform(minval=-0.05, maxval=0.05, seed=None)
+
+均匀分布初始化 minval：均匀分布下边界 maxval：均匀分布上边界 * seed：随机数种子
+
+6.TruncatedNormal
+keras.initializers.TruncatedNormal(mean=0.0, stddev=0.05, seed=None)
+
+截尾高斯分布初始化，该初始化方法与RandomNormal类似，但位于均值两个标准差以外的数据将会被丢弃并重新生成，形成截尾分布。该分布是神经网络权重和滤波器的推荐初始化方法。
+
+mean：均值
+stddev：标准差
+seed：随机数种子
+
+7.VarianceScaling
+keras.initializers.VarianceScaling(scale=1.0, mode='fan_in', distribution='normal', seed=None)
+该初始化方法能够自适应目标张量的shape。
+
+当distribution="normal"时，样本从0均值，标准差为sqrt(scale / n)的截尾正态分布中产生。其中：
+
+* 当```mode = "fan_in"```时，权重张量的输入单元数。
+* 当```mode = "fan_out"```时，权重张量的输出单元数
+* 当```mode = "fan_avg"```时，权重张量的输入输出单元数的均值
+当distribution="uniform"时，权重从[-limit, limit]范围内均匀采样，其中limit = limit = sqrt(3 * scale / n)
+
+scale: 放缩因子，正浮点数
+mode: 字符串，“fan_in”，“fan_out”或“fan_avg”fan_in", "fan_out", "fan_avg".
+distribution: 字符串，“normal”或“uniform”.
+
+seed: 随机数种子
+
+8.Orthogonal
+keras.initializers.Orthogonal(gain=1.0, seed=None)
+用随机正交矩阵初始化
+
+gain: 正交矩阵的乘性系数
+seed：随机数种子
+
+9.Identiy
+keras.initializers.Identity(gain=1.0)
+使用单位矩阵初始化，仅适用于2D方阵
+
+gain：单位矩阵的乘性系数
+
+10.lecun_uniform
+lecun_uniform(seed=None)
+LeCun均匀分布初始化方法，参数由[-limit, limit]的区间中均匀采样获得，其中limit=sqrt(3 / fan_in), fin_in是权重向量的输入单元数（扇入）
+
+seed：随机数种子
+
+11.lecun_normal
+lecun_normal(seed=None)
+LeCun正态分布初始化方法，参数由0均值，标准差为stddev = sqrt(1 / fan_in)的正态分布产生，其中fan_in和fan_out是权重张量的扇入扇出（即输入和输出单元数目）
+
+seed：随机数种子
+
+12.glorot_normal
+glorot_normal(seed=None)
+Glorot正态分布初始化方法，也称作Xavier正态分布初始化，参数由0均值，标准差为sqrt(2 / (fan_in + fan_out))的正态分布产生，其中fan_in和fan_out是权重张量的扇入扇出（即输入和输出单元数目）
+
+seed：随机数种子
+
+13.glorot_uniform
+glorot_uniform(seed=None)
+Glorot均匀分布初始化方法，又成Xavier均匀初始化，参数从[-limit, limit]的均匀分布产生，其中limit为sqrt(6 / (fan_in + fan_out))。fan_in为权值张量的输入单元数，fan_out是权重张量的输出单元数。
+
+seed：随机数种子
+
+14.he_normal
+he_normal(seed=None)
+He正态分布初始化方法，参数由0均值，标准差为sqrt(2 / fan_in) 的正态分布产生，其中fan_in权重张量的扇入
+
+seed：随机数种子
+
+15.he_uniform
+he_normal(seed=None)
+LeCun均匀分布初始化方法，参数由[-limit, limit]的区间中均匀采样获得，其中limit=sqrt(6 / fan_in), fin_in是权重向量的输入单元数（扇入）
+
+seed：随机数种子

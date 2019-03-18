@@ -1,0 +1,10 @@
+正则化项：用于防止过拟合，当模型越复杂，正则化项就会越大
+
+可用正则项
+keras.regularizers.l1(0.)
+keras.regularizers.l2(0.)
+keras.regularizers.l1_l2(0.)
+
+例子：
+from keras import regularizers
+model.add(Dense(64, input_dim=64,kernel_regularizer=regularizers.l2(0.01), activity_regularizer=regularizers.l1(0.01)))
