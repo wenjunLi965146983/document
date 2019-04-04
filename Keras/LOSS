@@ -1,0 +1,5 @@
+ LOSS输出层：
+ score_array = fn(y_true, y_pred)
+ 
+ 用Lambda将LOSS嵌入Model后，可以将Y_true=Np.Zeros(batchSize,),返回Y_Pre作为Loss
+ loss={'yolo_loss': lambda y_pred: y_pred}
