@@ -12,3 +12,5 @@ tf.constant():常量Tensor定义
 tf.tile():Tensor扩充tf.tile( input,     #输入  
                              multiples,  #某一维度上复制的次数  
                              name=None)
+ 
+tf.boolean_mask(tensor,mask,name='boolean_mask',axis=None)  掩盖部分元素
